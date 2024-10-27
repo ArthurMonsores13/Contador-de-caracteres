@@ -1,0 +1,99 @@
+/* Reset e layout principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Layout do contêiner */
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Container central */
+.container {
+    text-align: center;
+    width: 100%;
+    color: #333;
+}
+
+/* Estilo do título */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo do textarea */
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    color: #333;
+    background-color: #f7f8fc;
+}
+
+textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+}
+
+/* Estilo da contagem de caracteres */
+p {
+    font-size: 1rem;
+    margin: 15px 0;
+    color: #444;
+}
+
+.count {
+    font-weight: bold;
+    color: #6366f1;
+}
+
+/* Estilo do botão de reset */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
